@@ -20,12 +20,12 @@ from typing import Any
 import flax
 import functools
 import jax.numpy as jnp
-import sde_lib
+from .. import sde_lib
 import jax
 import numpy as np
-from models import wideresnet_noise_conditional
+from . import wideresnet_noise_conditional
 from flax.training import checkpoints
-from utils import batch_mul
+from ..utils import batch_mul
 
 
 # The dataclass that stores all training states
